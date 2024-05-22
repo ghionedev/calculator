@@ -44,29 +44,29 @@ function Calculator() {
 
   return (
     <>
-    <div className="w-86">
+    <div className="w-86 bg-sky-800 pr-5 pt-5 pb-5 rounded-xl shadow-[0_50px_50px_-1px_rgba(0,0,0,0.3)]">
       <div className="text-4xl ml-5">Calculadora</div>
-      <div className="text-6xl ml-5 mt-5 pb-3 bg-gray-800 rounded-xl text-end pr-5 h-16 truncate max-w-86">{result}</div>
+      <div className="text-6xl ml-5 mt-5 pb-20 pt-5 bg-gray-800 rounded-xl text-end pr-5 h-16 truncate max-w-86 shadow-xl">{result}</div>
       <div className="grid grid-cols-4 gap-2">
-      <Buttons button="7" display="7"></Buttons>
-      <Buttons button="8" display="8"></Buttons>
-      <Buttons button="9" display="9"></Buttons>
-      <Buttons button="/" display="÷"></Buttons>
-      <Buttons button="4" display="4"></Buttons>
-      <Buttons button="5" display="5"></Buttons>
-      <Buttons button="6" display="6"></Buttons>
-      <Buttons button="*" display="x"></Buttons>
-      <Buttons button="1" display="1"></Buttons>
-      <Buttons button="2" display="2"></Buttons>
-      <Buttons button="3" display="3"></Buttons>
-      <Buttons button="+" display="+"></Buttons>
+      <Buttons button="7" display="7" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="8" display="8" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="9" display="9" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="/" display="/" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="4" display="4" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="5" display="5" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="6" display="6" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="*" display="X" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="1" display="1" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="2" display="2" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="3" display="3" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="+" display="+" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
       </div>
       <div className="grid grid-cols-5 gap-2">
-      <Buttons button="0" display="0"></Buttons>
-      <Buttons button="." display="."></Buttons>
-      <Buttons button="=" display="=" className="rounded-xl bg-orange-700 text-2xl"></Buttons>
-      <Buttons button="-" display="-"></Buttons>
-      <Buttons button="DEL" display={DeleteIcon} className="rounded-xl bg-red-500"></Buttons>
+      <Buttons button="0" display="0" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="." display="." className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="=" display="=" className="rounded-xl bg-violet-600 text-2xl shadow-xl"></Buttons>
+      <Buttons button="-" display="-" className={"text-4xl	font-bold text-sky-600 shadow-xl"}></Buttons>
+      <Buttons button="DEL" display={DeleteIcon} className="rounded-xl bg-violet-600 shadow-xl pb-4"></Buttons>
       </div>
     </div>
     </>
